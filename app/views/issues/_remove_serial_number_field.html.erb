@@ -1,7 +1,8 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const elements = document.querySelectorAll('input.serial_number_cf');
-    elements.forEach(function(element, i) {
+    var node = Array.prototype.slice.call(elements,0); 
+    node.forEach(function(element, i){
       element.parentElement.remove();
     });
   });
